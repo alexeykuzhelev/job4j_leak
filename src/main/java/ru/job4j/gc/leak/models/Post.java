@@ -5,6 +5,7 @@ import java.util.Objects;
 
 @SuppressWarnings("unused")
 public class Post {
+
     private int id;
 
     private String text;
@@ -51,5 +52,14 @@ public class Post {
     @Override
     public int hashCode() {
         return Objects.hash(id, text, comments);
+    }
+
+    @Override
+    public String toString() {
+        return "Post{" +
+            "id=" + id +
+            ", text='" + text + '\'' +
+            ", comments=" + comments +
+            '}';
     }
 }

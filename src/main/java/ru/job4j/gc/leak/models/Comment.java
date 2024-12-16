@@ -4,6 +4,7 @@ import java.util.Objects;
 
 @SuppressWarnings("unused")
 public class Comment {
+
     private String text;
 
     private User user;
@@ -39,5 +40,13 @@ public class Comment {
     @Override
     public int hashCode() {
         return Objects.hash(text, user);
+    }
+
+    @Override
+    public String toString() {
+        return "Comment{" +
+            "text='" + text + '\'' +
+            ", user=" + user +
+            '}';
     }
 }
