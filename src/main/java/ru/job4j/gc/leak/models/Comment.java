@@ -44,9 +44,10 @@ public class Comment {
 
     @Override
     public String toString() {
-        return "Comment{" +
-            "text='" + text + '\'' +
-            ", user=" + user +
-            '}';
+        return "Comment{"
+                + "text='"
+                + text + '\''
+                + ", user=" + user
+                + '}';
     }
 }
